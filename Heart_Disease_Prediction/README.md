@@ -25,7 +25,7 @@ The project was developed using Python and Jupyter Notebook and demonstrates an 
 The dataset contains medical information about patients such as:
 
 * Age
-* Sex
+* Gender
 * Chest Pain Type
 * Resting Blood Pressure
 * Cholesterol
