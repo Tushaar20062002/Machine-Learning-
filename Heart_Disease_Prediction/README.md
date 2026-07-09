@@ -1,194 +1,171 @@
-# ❤️ Heart Disease Prediction using Machine Learning
+# ❤️ Heart Disease Risk Predictor
+
+A Machine Learning web application that predicts whether a person is at risk of heart disease based on clinical parameters. The model was developed using Python and Scikit-learn and deployed with Streamlit.
+
+## 🌐 Live Demo
+
+https://ml-heart-risk-predictor.streamlit.app/
+
+---
 
 ## 📌 Project Overview
 
-This project predicts whether a patient is at risk of heart disease using Machine Learning algorithms. The complete Machine Learning lifecycle has been followed, including data preprocessing, exploratory data analysis (EDA), feature engineering, model training, evaluation, and deployment with a web interface.
+This project follows a complete Machine Learning workflow, including:
 
-The project was developed using Python and Jupyter Notebook and demonstrates an end-to-end machine learning workflow.
-
----
-
-## 🎯 Objectives
-
-* Analyze heart disease patient data.
-* Perform data cleaning and preprocessing.
-* Explore relationships between different health parameters.
-* Train and compare multiple Machine Learning models.
-* Select the best-performing model.
-* Save the trained model.
-* Deploy the model using a Flask web application.
+- Data Loading
+- Exploratory Data Analysis (EDA)
+- Data Preprocessing
+- Feature Selection
+- Model Training
+- Model Evaluation
+- Model Saving
+- Streamlit Deployment
 
 ---
 
-## 📊 Dataset
+## 📂 Dataset
 
-The dataset contains medical information about patients such as:
+The project uses the Heart Disease dataset containing patient health information such as:
 
-* Age
-* Gender
-* Chest Pain Type
-* Resting Blood Pressure
-* Cholesterol
-* Fasting Blood Sugar
-* Resting ECG
-* Maximum Heart Rate
-* Exercise Induced Angina
-* ST Depression (Oldpeak)
-* Slope of ST Segment
-* Number of Major Vessels
-* Thalassemia
-* Target (Heart Disease)
+- Age
+- Sex
+- Chest Pain Type
+- Resting Blood Pressure
+- Cholesterol
+- Fasting Blood Sugar
+- Resting ECG
+- Maximum Heart Rate
+- Exercise Induced Angina
+- Oldpeak
+- ST Slope
+- Number of Major Vessels (ca)
+- Thalassemia (thal)
 
----
+**Target**
 
-## 🚀 Machine Learning Workflow
-
-1. Problem Definition
-2. Data Collection
-3. Data Cleaning
-4. Exploratory Data Analysis (EDA)
-5. Feature Engineering
-6. Feature Selection
-7. Data Preprocessing
-8. Train-Test Split
-9. Model Training
-10. Model Evaluation
-11. Hyperparameter Tuning (if applicable)
-12. Model Selection
-13. Model Saving
-14. Model Deployment
-15. Frontend Integration
+- 0 → No Heart Disease
+- 1 → Heart Disease
 
 ---
 
-## 🤖 Machine Learning Algorithms
+## 🔍 Exploratory Data Analysis (EDA)
 
-The project compares multiple classification algorithms, including:
+The notebook includes:
 
-* Logistic Regression
-* K-Nearest Neighbors (KNN)
-* Decision Tree
-* Support Vector Machine (SVM)
-* Naive Bayes
-  
-
-The best-performing model is selected based on evaluation metrics.
+- Dataset exploration
+- Missing value analysis
+- Duplicate value checking
+- Statistical summary
+- Correlation analysis
+- Feature distribution visualization
+- Target class distribution
 
 ---
 
-## 📈 Evaluation Metrics
+## ⚙️ Data Preprocessing
 
-Model performance is evaluated using:
+The following preprocessing steps were performed:
 
-* Accuracy
-* Precision
-* Recall
-* F1 Score
+- Handling missing values (if any)
+- Feature encoding
+- Feature scaling
+- Train-Test Split
+
+---
+
+## 🤖 Machine Learning
+
+The model was trained using Scikit-learn and evaluated on the test dataset.
+
+Evaluation includes:
+
+- Accuracy Score
+- Confusion Matrix
+- Classification Report
+
+The trained model was saved using Pickle for deployment.
 
 ---
 
 ## 🛠️ Technologies Used
 
-* Python
-* Jupyter Notebook
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Scikit-learn
-* CSS
+- Python
+- Jupyter Notebook
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Streamlit
+- Pickle
 
 ---
 
 ## 📁 Project Structure
 
-```text
+```
 Heart-Disease-Prediction/
 │
-│── heart.csv
-│
-├
-│── heart_disease_prediction.ipynb
-│
-
-│── model.pkl
-│── scaler.pkl
-│
-├
-│
-├
-│
-├── app.py
+├── heart.ipynb
+├── heart.csv
+├── streamlit_app.py
+├── model.pkl
+├── scaler.pkl
 ├── requirements.txt
-├── README.md
-└── .gitignore
+└── README.md
 ```
 
 ---
 
-## ▶️ How to Run
+## ▶️ Run Locally
 
-### 1. Clone the Repository
+Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/Machine-Learning.git
+git clone https://github.com/<your-username>/Machine-Learning.git
 ```
 
-### 2. Navigate to the Project
+Go to the project folder:
 
 ```bash
 cd Heart-Disease-Prediction
 ```
 
-### 3. Install Dependencies
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Run the Flask Application
+Run the application:
 
 ```bash
-python app.py
-```
-
-### 5. Open Your Browser
-
-```
-http://127.0.0.1:5000
+streamlit run streamlit_app.py
 ```
 
 ---
 
-## 📌 Features
+## 📸 Application
 
-* Complete Exploratory Data Analysis (EDA)
-* Data Visualization
-* Data Preprocessing
-* Feature Engineering
-* Multiple Machine Learning Models
-* Best Model Selection
-* Model Serialization
-* Flask Web Application
-* User-Friendly Prediction Interface
+The Streamlit application allows users to:
+
+- Enter patient health information
+- Predict heart disease risk
+- View prediction results instantly
 
 ---
 
-## 📷 Output
+## 📚 Learning Outcomes
 
-The web application allows users to enter patient medical information and predicts whether the patient is likely to have heart disease.
+Through this project, I practiced:
 
----
-
-## 📚 Future Improvements
-
-* Hyperparameter Optimization
-* Cross Validation
-* Model Explainability (SHAP/LIME)
-* Docker Deployment
-* Cloud Deployment (Render/AWS/Azure)
-* REST API Integration
-* Improved UI/UX
+- Exploratory Data Analysis (EDA)
+- Data Preprocessing
+- Feature Engineering
+- Classification Models
+- Model Evaluation
+- Model Serialization
+- Streamlit Deployment
 
 ---
 
@@ -197,7 +174,3 @@ The web application allows users to enter patient medical information and predic
 **Tushar Prajapati**
 
 Machine Learning | Data Science | AI/ML Enthusiast
-
----
-
-⭐ If you found this project helpful, consider giving it a star.
