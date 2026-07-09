@@ -68,10 +68,9 @@ The project compares multiple classification algorithms, including:
 * Logistic Regression
 * K-Nearest Neighbors (KNN)
 * Decision Tree
-* Random Forest
 * Support Vector Machine (SVM)
 * Naive Bayes
-* Gradient Boosting (if used)
+  
 
 The best-performing model is selected based on evaluation metrics.
 
@@ -85,8 +84,6 @@ Model performance is evaluated using:
 * Precision
 * Recall
 * F1 Score
-* Confusion Matrix
-* ROC-AUC Score (if applicable)
 
 ---
 
@@ -99,8 +96,6 @@ Model performance is evaluated using:
 * Matplotlib
 * Seaborn
 * Scikit-learn
-* Flask
-* HTML
 * CSS
 
 ---
@@ -110,19 +105,18 @@ Model performance is evaluated using:
 ```text
 Heart-Disease-Prediction/
 │
-├── Dataset/
-│   └── heart.csv
+│── heart.csv
 │
-├── Notebook/
-│   └── heart_disease_prediction.ipynb
+├
+│── heart_disease_prediction.ipynb
 │
-├── Models/
-│   ├── model.pkl
-│   └── scaler.pkl
+
+│── model.pkl
+│── scaler.pkl
 │
-├── templates/
+├
 │
-├── static/
+├
 │
 ├── app.py
 ├── requirements.txt
